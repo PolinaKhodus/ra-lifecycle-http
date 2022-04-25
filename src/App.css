@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url("//fonts.googleapis.com/css?family=Work+Sans:300,400,600");
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*,::before,::after {
+  box-sizing: border-box;
+}
+
+.task-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 30px;
+  
+  font-size: 30px;
+  color: white;
+  text-decoration: underline;
+  background-image: linear-gradient(45deg, blue, yellow);
+}
+
+/* Мировые часы
+*/
+
+.clock-widget_container {
+  width: 700px;
+  margin-bottom: 50px;
+}
+
+.clock-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+button {
+  height: 30px;
+  outline: none;
+}
+
+input {
+  width: 200px;
+}
+
+button {
+  align-self: flex-end;
+}
+
+h3 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.clocks-box {
+  display: flex;
+  padding-top: 20px;
+}
+
+.clock-box {
+  position: relative;
+  border: 2px solid tan;
+  padding: 10px;
+}
+
+.clock-box:not(:last-of-type) {
+  margin-right: 20px;    
+}
+
+.time-field {
+  padding: 5px;
+
+  border: green;
+  color: gray;
+  background-color: lightgreen;
+}
+
+.del-btn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  z-index: 10;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 20px;
+  height: 20px;
+
+  border: 2px solid tan;
+  background-color: white;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+/* CRUD
+*/
+
+.notes-widget_container {
+  width: 800px;
+}
+
+.widget-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.notes-widget_title {
+  margin: 0;
+  margin-right: 15px;
+
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.material-icon {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+
+  font-family: 'Material Icons';
+  border: 2px solid tan;
+  border-radius: 50%;
+  font-size: 25px;
+  background-color: white;
+
+  cursor: pointer;
+}
+
+.reload_btn {
+  padding-left: 3px;  
+  color: green;  
+}
+
+.new-note_form {
+  position: relative;
+  width: 400px;
+  min-height: 150px;  
+}
+
+.new-note_field {
+  width: 100%; 
+  min-height: 150px;
+  padding: 5px 45px 5px 5px;
+
+  resize: none;
+  outline: none;
+  border: 2px solid gray;
+}
+
+.new-note_btn {
+  position: absolute;
+  right: 5px;
+  bottom: 10px;
+  z-index: 10;
+
+  color: aquamarine;
+}
+
+.notes_box {
+  display: flex;
+  padding: 20px;
+
+  flex-wrap: wrap;
+}
+
+.note-card {
+  position: relative;
+  width: 300px;
+  min-height: 150px;
+  padding: 10px;
+
+  border: 2px solid gray;
+}
+
+.note-card:not(:last-of-type) {
+  margin-right: 20px;    
+}
+
+.delete-btn {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  
+  color: red;
+  font-size: 35px;
+}
